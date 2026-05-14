@@ -42,13 +42,26 @@ jobs:
 
       - name: Build
         working-directory: ./docs-site
-        run: pnpm run build
+        run: |
+          echo "=== Build started ==="
+          pnpm run build > ../vitepress-build.log 2>&1 || true
+          echo "=== Build exit code: $? ==="
+          cat ../vitepress-build.log
+          echo "=== End of log ==="
+          if [ ! -d ".vitepress/dist" ]; then
+            echo "ERROR: .vitepress/dist was NOT created"
+            exit 1
+          fi
+          echo "=== dist contents ==="
+          ls -la .vitepress/dist/
 
       - name: Upload artifact
+        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs-site/.vitepress/dist
 
       - name: Deploy to GitHub Pages
+        if: success()
         id: deployment
         uses: actions/deploy-pages@v4
