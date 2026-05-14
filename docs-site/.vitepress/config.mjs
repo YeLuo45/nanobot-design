@@ -4,6 +4,8 @@ export default defineConfig({
   title: "nanobot Design",
   description: "nanobot AI Agent Framework - Architecture Design Documentation",
   lang: "en-US",
+  base: "/nanobot-design/",
+  ignoreDeadLinks: true,
 
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/logo.svg" }],
