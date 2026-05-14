@@ -34,7 +34,7 @@ features:
     linkText: View Providers
   - icon: 💬
     title: Chat Channels
-    details: 12+ integrations: Telegram, Discord, Slack, Feishu, WeChat, WhatsApp, Matrix, QQ, and more.
+    details: "12+ integrations: Telegram, Discord, Slack, Feishu, WeChat, WhatsApp, Matrix, QQ, and more."
     link: /channels
     linkText: View Channels
   - icon: 🛠️
