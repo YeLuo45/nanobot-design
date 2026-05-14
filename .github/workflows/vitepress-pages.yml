@@ -2,7 +2,7 @@ name: Deploy VitePress Docs to GitHub Pages
 
 on:
   push:
-    branches: [master, main]
+    branches: [main]
     paths: ['docs-site/**', '.github/workflows/vitepress-pages.yml']
   workflow_dispatch:
 
@@ -18,6 +18,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://yeluo45.github.io/nanobot-design/
     steps:
       - name: Checkout
         uses: actions/checkout@v4
