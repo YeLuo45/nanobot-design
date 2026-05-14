@@ -1,0 +1,185 @@
+/* nanobot Design - Dark AI Agent Theme */
+/* Brand color: Orange/Amber (#f97316) + Cyan (#06b6d4) */
+
+:root {
+  --vp-c-bg: #0a0a0f;
+  --vp-c-bg-alt: #12121a;
+  --vp-c-bg-elv: #1a1a25;
+  --vp-c-bg-soft: #222230;
+  --vp-c-text-1: #f0f0f5;
+  --vp-c-text-2: #a0a0b0;
+  --vp-c-text-3: #606070;
+  --vp-c-divider: #2a2a3a;
+  --vp-c-brand-1: #f97316;
+  --vp-c-brand-2: #ea580c;
+  --vp-c-brand-3: #c2410c;
+  --vp-c-brand-soft: rgba(249, 115, 22, 0.12);
+  --vp-nav-bg-color: rgba(10, 10, 15, 0.92);
+  --vp-sidebar-bg-color: #12121a;
+  --vp-code-block-bg: #1a1a25;
+  --vp-c-default-soft: rgba(249, 115, 22, 0.12);
+}
+
+/* Hero Section */
+.VPHome {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1005 40%, #0a0f14 70%, #0a0a0f 100%);
+  padding: 2rem 0;
+}
+
+.VPHero {
+  padding: 3rem 2rem;
+}
+
+/* Hero Title Gradient */
+.VPHero .name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 30%, #06b6d4 70%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .text {
+  font-size: 1.5rem;
+  color: #a0a0b0;
+}
+
+.VPHero .tagline {
+  color: #606070;
+  font-size: 1.1rem;
+}
+
+/* Feature Cards */
+.VPFeature {
+  background: rgba(249, 115, 22, 0.04) !important;
+  border: 1px solid rgba(249, 115, 22, 0.12) !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  background: rgba(249, 115, 22, 0.1) !important;
+  border-color: rgba(249, 115, 22, 0.35) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 48px rgba(249, 115, 22, 0.15) !important;
+}
+
+.VPFeature .title {
+  color: #f0f0f5 !important;
+  font-weight: 600;
+}
+
+.VPFeature .details {
+  color: #a0a0b0 !important;
+}
+
+/* Navbar */
+.VPNav {
+  background: rgba(10, 10, 15, 0.92) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.VPNavBar .title {
+  background: linear-gradient(135deg, #f97316, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Buttons */
+.VPButton.medium.brand {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.VPButton.medium.brand:hover {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4);
+}
+
+/* Sidebar */
+.VPSidebar {
+  background: #12121a;
+  border-right: 1px solid #2a2a3a;
+}
+
+.VPSidebarItem.is-active > .item .link .text {
+  color: #f97316 !important;
+  font-weight: 600;
+}
+
+.VPSidebarItem .item .link:hover .text {
+  color: #fb923c;
+}
+
+/* Code Blocks */
+.vp-code-group .tabs {
+  background: #1a1a25;
+  border-bottom: 1px solid #2a2a3a;
+}
+
+.vp-copy-code {
+  background: rgba(249, 115, 22, 0.15);
+}
+
+.vp-copy-code:hover {
+  background: rgba(249, 115, 22, 0.35);
+}
+
+/* Footer */
+.VPFooter {
+  background: #0a0a0f;
+  border-top: 1px solid #2a2a3a;
+}
+
+/* Typography */
+.VPDoc h1 {
+  background: linear-gradient(135deg, #f97316 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPDoc h2, .VPDoc h3 {
+  color: #f0f0f5;
+}
+
+/* Tables */
+.VPDoc table th {
+  background: rgba(249, 115, 22, 0.12);
+  color: #f0f0f5;
+  font-weight: 600;
+  border: 1px solid #2a2a3a;
+}
+
+.VPDoc table td {
+  border: 1px solid #2a2a3a;
+  color: #a0a0b0;
+}
+
+.VPDoc table tr:hover td {
+  background: rgba(249, 115, 22, 0.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #12121a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a4a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}

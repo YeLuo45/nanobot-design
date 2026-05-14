@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="nano_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="50%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <!-- Cat face outline (nanobot's cat theme) -->
+  <path d="M12 52 L12 32 Q12 20 24 20 L40 20 Q52 20 52 32 L52 52" stroke="url(#nano_grad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Cat ears -->
+  <path d="M12 32 L8 18 L20 28" stroke="url(#nano_grad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 32 L56 18 L44 28" stroke="url(#nano_grad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Eyes -->
+  <circle cx="24" cy="36" r="4" fill="url(#nano_grad)" opacity="0.9"/>
+  <circle cx="40" cy="36" r="4" fill="url(#nano_grad)" opacity="0.9"/>
+  <!-- Nose -->
+  <path d="M32 42 L30 46 L34 46 Z" fill="url(#nano_grad)" opacity="0.8"/>
+  <!-- Whiskers -->
+  <path d="M16 40 L6 38 M16 43 L6 44 M48 40 L58 38 M48 43 L58 44" stroke="url(#nano_grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Brain symbol inside -->
+  <text x="32" y="26" font-family="system-ui, sans-serif" font-size="5" font-weight="bold" fill="url(#nano_grad)" text-anchor="middle">AI</text>
+</svg>
